@@ -3,7 +3,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import OnBoardingScreen from "../screens/OnBoarding/OnBoardingScreen";
 import LoginScreen from "../screens/Login/LoginScreen";
 import OTPScreen from "../screens/OTP/OTPScreen";
-import HomeScreen from "../screens/Home/HomeScreen";
+import DashboardScreen from "../screens/Dashboard/DashboardScreen";
 
 const Stack = createStackNavigator();
 
@@ -14,7 +14,7 @@ const StackNavigation = () => {
         <Stack.Screen name="OnBoardingScreen" component={OnBoardingScreen} options={{headerShown:false}}/>
         <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown:false}} />
         <Stack.Screen name="OTPScreen" component={OTPScreen} options={{headerShown:false}} />
-        <Stack.Screen name="HomeScreen" component={HomeScreen} options={{headerShown:false}} />
+        <Stack.Screen name="DashboardScreen" component={DashboardScreen} options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
   )

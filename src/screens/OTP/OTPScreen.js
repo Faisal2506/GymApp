@@ -20,7 +20,7 @@ const OTPScreen = ({navigation}) => {
       if(!codeFilled) {
         return false
       }
-      navigation.navigate('HomeScreen')
+      navigation.navigate('DashboardScreen')
     } 
   return (
     <View style={styles.mainContainer}>
