@@ -39,7 +39,7 @@ const OnBoardingScreen = ({navigation}) => {
             backgroundColor: '#000000',
             image: <Image source={require('../../../assets/images/OnBoarding/Background2.png')} style={styles.imageStyle}/>,
             title: 'ACTION IS THE KEY',
-            subtitle: "TO ALL SUCCES",
+            subtitle: "TO ALL SUCCESS",
             titleSyles: styles.titleStyle,
             subTitleStyles: styles.subTitleStyle
           },
