@@ -4,9 +4,16 @@ import { SCREEN_HEIGHT,SCREEN_WIDTH,getResponsiveFontSize } from '../../../const
 export const styles = StyleSheet.create({
   buttonContainer:{
     borderWidth:1,
-    borderColor:"red",
+    // borderColor:"red",
+    backgroundColor:"#D0FD3E",
     height:SCREEN_HEIGHT/15,
     marginHorizontal:SCREEN_WIDTH/4,
-    borderRadius:30
+    borderRadius:30,
+    justifyContent:"center",
+    alignItems:"center"
+  },
+  buttonTitle:{
+    fontFamily:"NotoSansBold",
+    fontSize:getResponsiveFontSize(18)
   }
 })
