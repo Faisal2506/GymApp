@@ -4,6 +4,8 @@ import OnBoardingScreen from "../screens/OnBoarding/OnBoardingScreen";
 import LoginScreen from "../screens/Login/LoginScreen";
 import OTPScreen from "../screens/OTP/OTPScreen";
 import DashboardScreen from "../screens/Dashboard/DashboardScreen";
+import DrawerNavigation from "./drawerNavigation";
+import BottomTabNavigation from "./tabNavigation";
 
 const Stack = createStackNavigator();
 
@@ -14,7 +16,7 @@ const StackNavigation = () => {
         <Stack.Screen name="OnBoardingScreen" component={OnBoardingScreen} options={{headerShown:false}}/>
         <Stack.Screen name="LoginScreen" component={LoginScreen} options={{headerShown:false}} />
         <Stack.Screen name="OTPScreen" component={OTPScreen} options={{headerShown:false}} />
-        <Stack.Screen name="DashboardScreen" component={DashboardScreen} options={{headerShown:false}} />
+        <Stack.Screen name="DashboardScreen" component={BottomTabNavigation} options={{headerShown:false}} />
       </Stack.Navigator>
     </NavigationContainer>
   )

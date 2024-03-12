@@ -30,16 +30,15 @@ export const styles = StyleSheet.create({
   },
   cardTitle:{
     color:"#fff",
-    fontFamily:"NotoSansRegular"
-
+    fontFamily:"NotoSansRegular",
+    marginLeft:SCREEN_WIDTH/20
   },
-  dateText:{
+  dailyDate:{
     color:"#D0FD3E",
-    fontFamily:"NotoSansRegular"
-
-
+    fontFamily:"NotoSansRegular",
+    marginRight:SCREEN_WIDTH/20
   },
-  dailyCardContainer:{
+  cardContainer:{
     // borderWidth:1,
     borderColor:"#fff",
     alignItems:"center"
