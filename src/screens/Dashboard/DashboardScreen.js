@@ -13,9 +13,19 @@ const DashboardScreen = () => {
       </View>
       <View style={styles.cardTitleContainer}>
         <Text style={styles.cardTitle}>Today Workout Plan</Text>
-        <Text style={styles.dateText}>Mon 11 Mar</Text>
+        <Text style={styles.dailyDate}>Mon 11 Mar</Text>
       </View>
-      <TouchableOpacity style={styles.dailyCardContainer}>
+      <TouchableOpacity style={styles.cardContainer}>
+        <Image 
+          source={require('../../../assets/images/Dashboard/DailyWorkoutCard.png')}
+          style={styles.imageStyle}
+        />
+      </TouchableOpacity>
+      <View style={styles.cardTitleContainer}>
+        <Text style={styles.cardTitle}>Monthly Workout Plan</Text>
+        <Text style={styles.dailyDate}>March</Text>
+      </View>
+      <TouchableOpacity style={styles.cardContainer}>
         <Image 
           source={require('../../../assets/images/Dashboard/DailyWorkoutCard.png')}
           style={styles.imageStyle}
