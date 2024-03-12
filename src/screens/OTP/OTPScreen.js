@@ -3,7 +3,7 @@ import React from 'react'
 import { styles } from './OTPStyle'
 import OTPInputView from '@twotalltotems/react-native-otp-input'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
-import Button from '../../components/StatusBar/Button/Button'
+import Button from '../../components/Button/Button'
 
 const OTPScreen = ({navigation}) => {
   const [codeFilled, setCodeFilled] = React.useState();

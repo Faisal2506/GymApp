@@ -2,10 +2,11 @@ import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { styles } from './DashboardStyle'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
+import FloatingButton from '../../components/FloatingButton/FloatingButton'
 
 const DashboardScreen = () => {
   return (
-    <ScrollView style={styles.mainContainer}>
+    <View style={styles.mainContainer}>
       <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
       <View style={styles.welcomeContainer}>
         <Text style={styles.usernameText}>HELLO SARAH,</Text>
@@ -31,7 +32,8 @@ const DashboardScreen = () => {
           style={styles.imageStyle}
         />
       </TouchableOpacity>
-    </ScrollView>
+      <FloatingButton />
+    </View>
   )
 }
 
