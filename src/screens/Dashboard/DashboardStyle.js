@@ -4,6 +4,7 @@ import { SCREEN_HEIGHT,SCREEN_WIDTH,getResponsiveFontSize } from '../../constant
 export const styles = StyleSheet.create({
   mainContainer:{
     flex:1,
+    height:SCREEN_HEIGHT,
     backgroundColor:"#000000",
     paddingHorizontal:SCREEN_WIDTH/25
   },
