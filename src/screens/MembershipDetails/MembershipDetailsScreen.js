@@ -7,7 +7,23 @@ const MembershipDetailsScreen = () => {
   return (
     <View style={styles.mainContainer}>
       <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
-      <Text>MembershipDetailsScreen</Text>
+      <View style={styles.details}>
+        <View style={styles.container}>
+          <Text style={styles.detailsText}>Payment</Text>
+        </View>
+        <View style={styles.container}>
+          <Text style={styles.detailsText}>Follow Up</Text>
+        </View>
+        <View style={styles.container}>
+          <Text style={styles.detailsText}>Add Days Tab</Text>
+        </View>
+        <View style={styles.container}>
+          <Text style={styles.detailsText}>Manual Attendance</Text>
+        </View>
+        <View style={styles.container}>
+          <Text style={[styles.detailsText,{borderWidth:0}]}>Attendance Report</Text>
+        </View>
+      </View>
     </View>
   )
 }
