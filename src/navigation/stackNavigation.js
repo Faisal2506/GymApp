@@ -9,6 +9,7 @@ import BottomTabNavigation from "./tabNavigation";
 import ChatScreen from "../screens/Chat/ChatScreen";
 import InvitationScreen from "../screens/Invitation/InvitationScreen";
 import AddWorkoutScreen from "../screens/AddWorkout/AddWorkoutScreen";
+import MembershipDetailsScreen from "../screens/MembershipDetails/MembershipDetailsScreen";
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,7 @@ const StackNavigation = () => {
         <Stack.Screen name="ChatScreen" component={ChatScreen} options={options} />
         <Stack.Screen name="InvitationScreen" component={InvitationScreen} options={options} />
         <Stack.Screen name="AddWorkoutScreen" component={AddWorkoutScreen} options={options} />
+        <Stack.Screen name="MembershipDetailsScreen" component={MembershipDetailsScreen} options={options} />
       </Stack.Navigator>
     </NavigationContainer>
   )
