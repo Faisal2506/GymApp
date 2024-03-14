@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import {styles} from './WorkoutStyle'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
@@ -11,7 +11,7 @@ const WorkoutScreen = ({navigation}) => {
     navigation.navigate('AddWorkoutScreen')
   }
   return (
-    <View style={styles.mainContainer}>
+    <ScrollView style={styles.mainContainer}>
       <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
       <View style={styles.buttonContainer}>
       <Button title={"Add Workout"} buttonStyle={styles.addWorkoutBtn} buttonFunction={addWorkoutHandle}/>
@@ -20,7 +20,7 @@ const WorkoutScreen = ({navigation}) => {
       <View style={styles.workoutTableContainer}>
       <WorkoutDetailsTable />
       </View>
-    </View>
+    </ScrollView>
   )
 }
 

@@ -5,7 +5,8 @@ export const styles = StyleSheet.create({
   mainContainer:{
     flex:1,
     backgroundColor:"#000000",
-    paddingHorizontal:SCREEN_WIDTH/40
+    paddingHorizontal:SCREEN_WIDTH/40,
+    paddingTop:SCREEN_HEIGHT/40
   },
   buttonContainer:{
     left:SCREEN_WIDTH/3.4
