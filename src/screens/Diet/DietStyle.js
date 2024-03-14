@@ -10,14 +10,19 @@ export const styles = StyleSheet.create({
     color:"#fff",
     fontFamily:"NotoSansExtraBold",
     marginLeft:SCREEN_WIDTH/30,
-    marginBottom:SCREEN_HEIGHT/40
+    fontSize:getResponsiveFontSize(18)
   },
   dietInfo:{
     // borderWidth:1,borderColor:"#fff",
     marginTop:SCREEN_HEIGHT/20,
-    paddingHorizontal:SCREEN_WIDTH/40
+    paddingHorizontal:SCREEN_WIDTH/40,
+    marginBottom:SCREEN_HEIGHT/40,
+
   },
   detailsContainer:{
-    flexDirection:"row"
+    flexDirection:"row",
+    alignItems:"center",
+    // borderWidth:1,borderColor:"#fff",
+    marginBottom:SCREEN_HEIGHT/40,
   }
 })
