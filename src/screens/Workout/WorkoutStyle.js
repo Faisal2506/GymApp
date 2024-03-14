@@ -12,5 +12,8 @@ export const styles = StyleSheet.create({
   },
   addWorkoutBtn:{
     width:SCREEN_WIDTH/2.5
+  },
+  workoutTableContainer:{
+    marginTop:SCREEN_HEIGHT/30
   }
 })

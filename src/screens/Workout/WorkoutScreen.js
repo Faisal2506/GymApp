@@ -4,15 +4,22 @@ import {styles} from './WorkoutStyle'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import Button from '../../components/Button/Button'
 import SearchBar from '../../components/SearchBar/SearchBar'
+import WorkoutDetailsTable from '../../components/WorkoutDetailsTable/WorkoutDetailsTable'
 
-const WorkoutScreen = () => {
+const WorkoutScreen = ({navigation}) => {
+  const addWorkoutHandle = () => {
+    navigation.navigate('AddWorkoutScreen')
+  }
   return (
     <View style={styles.mainContainer}>
       <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
       <View style={styles.buttonContainer}>
-      <Button title={"Add Workout"} buttonStyle={styles.addWorkoutBtn}/>
+      <Button title={"Add Workout"} buttonStyle={styles.addWorkoutBtn} buttonFunction={addWorkoutHandle}/>
       </View>
       <SearchBar placeholder={"Search for workout"}/>
+      <View style={styles.workoutTableContainer}>
+      <WorkoutDetailsTable />
+      </View>
     </View>
   )
 }

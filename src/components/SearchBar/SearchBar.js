@@ -8,7 +8,7 @@ const SearchBar = ({placeholder}) => {
       <TextInput 
         style={styles.input}
         placeholder={placeholder}
-        
+        placeholderTextColor={"#ffffff"}
       />
     </View>
   )
