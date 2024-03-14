@@ -22,7 +22,9 @@
     "react-native": "0.73.4",
     "react-native-gesture-handler": "^2.14.0",
     "react-native-onboarding-swiper": "^1.2.0",
-    "react-native-paper": "^5.12.3"
+    "react-native-paper": "^5.12.3",
+    "react-native-responsive-screen": "^1.4.2",
+    "react-native-snap-carousel": "^3.9.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
