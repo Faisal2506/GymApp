@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     elevation:1
   },
   planContents:{
-    paddingTop:SCREEN_HEIGHT/40,
+    paddingTop:SCREEN_HEIGHT/60,
     paddingHorizontal:SCREEN_WIDTH/40
   },
   bgImage:{

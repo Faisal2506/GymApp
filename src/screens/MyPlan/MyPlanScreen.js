@@ -3,12 +3,18 @@ import React from 'react'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import { styles } from './MyPlanStyle'
 import Button from '../../components/Button/Button'
+import { useRoute, useNavigation } from '@react-navigation/native';
 
 
 const MyPlanScreen = ({navigation}) => {
   const idHandle = () => {
     navigation.navigate('MembershipDetailsScreen')
   }
+  const freezeHandle = () => {
+    navigation.navigate("FreezeListingScreen")
+  }
+  const route = useRoute();
+  // const { freeze } = route.params;
   return (
     <View style={styles.mainContainer}>
       <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
@@ -34,7 +40,8 @@ const MyPlanScreen = ({navigation}) => {
       <Text style={styles.planDetails}>End Date</Text>
       </View>
       <Text style={styles.planDetails}>Plan Status</Text>
-      <Text style={styles.planDetails}>Freeze Status</Text>
+      {/* <Text style={styles.planDetails}>Freeze Status</Text> */}
+      <Button title={"freeze"} buttonFunction={freezeHandle}/>
       <View style={styles.row}>
       <Button title={"Payment"} buttonStyle={styles.buttonStyle}/>
       <Button title={"Attendance Report"} buttonStyle={[styles.buttonStyle,styles.attendanceButton]}/>
