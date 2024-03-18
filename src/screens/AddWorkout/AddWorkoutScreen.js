@@ -63,7 +63,7 @@ const AddWorkoutScreen = ({navigation}) => {
         <Button title={"Calculate"} buttonStyle={styles.calculateBtnStyle} buttonFunction={calculateHandle}/>
         </View>
         <View style={styles.detailsContainer}>
-        <Button  title={"Save"} buttonFunction={saveHandle}/>
+        <Button  title={"Save"} buttonFunction={saveHandle} buttonStyle={styles.saveBtnContainer}/>
         </View>
       </ScrollView>
     </View>

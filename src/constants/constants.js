@@ -16,5 +16,6 @@ export const getResponsiveFontSize = (size) => size / getFontSize
 export let customFonts = {
   'NotoSansBold':require('../../assets/fonts/NotoSansLaoLooped-Bold.ttf'),
   'NotoSansExtraBold':require('../../assets/fonts/NotoSansLaoLooped-ExtraBold.ttf'),
-  'NotoSansRegular':require('../../assets/fonts/NotoSansLaoLooped-Regular.ttf')
+  'NotoSansRegular':require('../../assets/fonts/NotoSansLaoLooped-Regular.ttf'),
+  'NotoSansExtraLight' :require('../../assets/fonts/NotoSansLaoLooped-ExtraLight.ttf')
 }

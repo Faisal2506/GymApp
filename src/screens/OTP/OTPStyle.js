@@ -28,7 +28,8 @@ export const styles = StyleSheet.create({
     fontFamily:"NotoSansExtraBold"
   },
   buttonContainer:{
-    marginTop:SCREEN_HEIGHT/10
+    marginTop:SCREEN_HEIGHT/10,
+    alignSelf:"center"
   },
   otpContainer:{
     height:SCREEN_HEIGHT/6,
