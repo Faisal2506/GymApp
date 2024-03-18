@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, ImageBackground } from 'react-native'
 import React from 'react'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import { styles } from './MyPlanStyle'
@@ -12,22 +12,36 @@ const MyPlanScreen = ({navigation}) => {
   return (
     <View style={styles.mainContainer}>
       <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+      <View style={styles.cardContainer}>
+        <ImageBackground source={require('../../../assets/images/MyPlan/bg1.png')} imageStyle={{borderRadius:999}} style={styles.bgImage} resizeMethod="resize" resizeMode='cover'>
+          <View style={styles.planContents}>
+      <View style={styles.row}>
       <TouchableOpacity onPress={idHandle}>
       <Text style={styles.planDetails}>ID</Text>
       </TouchableOpacity>
       <Text style={styles.planDetails}>Membership Email ID</Text>
+      </View>
       <Text style={styles.planDetails}>Membership Name</Text>
       <Text style={styles.planDetails}>Monitor Trainer Name</Text>
-      <Text style={styles.planDetails}>To Pay</Text>
+      <View style={styles.row}>
       <Text style={styles.planDetails}>Paid</Text>
+      <Text style={styles.planDetails}>To Pay</Text>
+      </View>
       <Text style={styles.planDetails}>Pending Balance</Text>
       <Text style={styles.planDetails}>Created date</Text>
+      <View style={styles.row}>
       <Text style={styles.planDetails}>Start Date</Text>
       <Text style={styles.planDetails}>End Date</Text>
-      <Button title={"Payment"} />
+      </View>
       <Text style={styles.planDetails}>Plan Status</Text>
       <Text style={styles.planDetails}>Freeze Status</Text>
-      <Button title={"Attendance Report"} buttonStyle={styles.attendanceButton}/>
+      <View style={styles.row}>
+      <Button title={"Payment"} buttonStyle={styles.buttonStyle}/>
+      <Button title={"Attendance Report"} buttonStyle={[styles.buttonStyle,styles.attendanceButton]}/>
+      </View>
+      </View>
+      </ImageBackground>
+      </View>
     </View>
   )
 }

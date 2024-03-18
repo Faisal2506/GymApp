@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     paddingTop:SCREEN_HEIGHT/40
   },
   buttonContainer:{
-    left:SCREEN_WIDTH/3.4
+    marginLeft:SCREEN_WIDTH/1.9
   },
   addWorkoutBtn:{
     width:SCREEN_WIDTH/2.5

@@ -3,17 +3,19 @@ import { SCREEN_HEIGHT,SCREEN_WIDTH,getResponsiveFontSize } from '../../constant
 
 export const styles = StyleSheet.create({
   buttonContainer:{
-    borderWidth:1,
+    // borderWidth:1,
     // borderColor:"red",
     backgroundColor:"#D0FD3E",
     height:SCREEN_HEIGHT/15,
-    marginHorizontal:SCREEN_WIDTH/4,
+    width:SCREEN_WIDTH/3,
+    // marginHorizontal:SCREEN_WIDTH/4,
     borderRadius:30,
     justifyContent:"center",
-    alignItems:"center"
+    alignItems:"center",
   },
   buttonTitle:{
     fontFamily:"NotoSansBold",
-    fontSize:getResponsiveFontSize(18)
+    fontSize:getResponsiveFontSize(18),
+    textAlign:'center'
   }
 })

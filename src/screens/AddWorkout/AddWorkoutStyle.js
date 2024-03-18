@@ -27,13 +27,14 @@ export const styles = StyleSheet.create({
     // paddingTop:SCREEN_HEIGHT/20
   },
   detailsContainer:{
-    paddingTop:SCREEN_HEIGHT/20
+    paddingTop:SCREEN_HEIGHT/20,
   },
   calculateBtnStyle:{
     width:SCREEN_WIDTH/3.2,
-    borderWidth:1,
-    borderColor:"#fff",
-    marginLeft:SCREEN_WIDTH/10
+    marginLeft:SCREEN_WIDTH/5,
+  },
+  saveBtnContainer:{
+    alignSelf:"center"
   },
   errorText:{
     color:"#ff4545",
