@@ -11,6 +11,7 @@ export const styles = StyleSheet.create({
     marginTop:SCREEN_HEIGHT/40,
     borderRadius:30,
     backgroundColor:"#999",
-    textAlign:"center"
+    textAlign:"center",
+    fontFamily:"NotoSansBold"
   }
 })
