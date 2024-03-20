@@ -9,11 +9,12 @@ export const styles = StyleSheet.create({
   },
   imageBackground:{
     flex:1,
+    width:SCREEN_WIDTH/1.05,
     resizeMode:"contain",
     height:SCREEN_HEIGHT/6,
   },
   chatTypeCard:{
-    borderWidth:1,borderColor:"#fff",
+    // borderWidth:1,borderColor:"#fff",
     height:SCREEN_HEIGHT/6,
     marginBottom:SCREEN_HEIGHT/10,
     justifyContent:"space-around",
@@ -30,5 +31,17 @@ export const styles = StyleSheet.create({
     color:"red",
     fontFamily:"NotoSansExtraBold",
     fontSize:getResponsiveFontSize(14),
+    marginTop:SCREEN_HEIGHT/17,
+    textAlign:"center"
+  },
+  chatTypeOwner:{
+    color:"red",
+    fontFamily:"NotoSansExtraBold",
+    fontSize:getResponsiveFontSize(14),
+    // marginTop:SCREEN_HEIGHT/17,
+    textAlign:"center"
+  },
+  row:{
+    flexDirection:"row"
   }
 })
