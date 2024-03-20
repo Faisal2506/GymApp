@@ -2,7 +2,8 @@ import { MaterialIcons, FontAwesome5, FontAwesome6, MaterialCommunityIcons } fro
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import DashboardScreen from "../screens/Dashboard/DashboardScreen";
 import WorkoutScreen from "../screens/Workout/WorkoutScreen";
-import RegimeScreen from "../screens/Regime/RegimeScreen";
+// import RegimeScreen from "../screens/Regime/RegimeScreen";
+import TopTabNavigation from "./topTabNavigation";
 import DietScreen from "../screens/Diet/DietScreen";
 import { View, Text, StyleSheet} from 'react-native'
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from "../constants/constants";
@@ -57,7 +58,7 @@ const BottomTabNavigation = () => {
         )}}
       />
       <Tab.Screen 
-        name="TabRegime" component={RegimeScreen} options={{tabBarIcon:({focused})=>(
+        name="TabRegime" component={TopTabNavigation} options={{tabBarIcon:({focused})=>(
           <View style={focused?styles.selectedTab:styles.otherTab}>
             <MaterialCommunityIcons 
               name="file-document-edit"
