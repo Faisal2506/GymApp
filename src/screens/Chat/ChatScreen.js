@@ -39,7 +39,7 @@ const ChatScreen = () => {
       <Text style={styles.trainerCardTitle}>Group Chat</Text>
       <TouchableOpacity style={styles.chatTypeCard}>
         <Image source={require('../../../assets/images/Chat/groupChat.png')} style={styles.imageStyle} />
-        <Text style={styles.chatTypeTitle}>Individual Chat with Personal Trainer{"\n"} On Request</Text>
+        <Text style={styles.chatTypeTitle}>Group Chat</Text>
         <AntDesign
           name='caretright'
           size={20}
