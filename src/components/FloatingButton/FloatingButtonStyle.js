@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
   button: {
     // position: 'absolute',
     bottom: 70,
-    right:36,
+    right:30,
     width: 60,
     height:60,
     alignItems: 'center',

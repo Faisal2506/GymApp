@@ -8,7 +8,8 @@ export const styles = StyleSheet.create({
     paddingHorizontal:SCREEN_WIDTH/40
   },
   invitationDetails:{
-    color:"#ffffff",
-    fontFamily:"NotoSansExtraBold"
+    color:"#D0FD3E",
+    fontFamily:"NotoSansExtraBold",
+    fontSize:getResponsiveFontSize(18)
   }
 })
