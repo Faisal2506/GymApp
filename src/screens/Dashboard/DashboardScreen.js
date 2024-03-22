@@ -5,6 +5,7 @@ import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import FloatingButton from '../../components/FloatingButton/FloatingButton'
 
 const DashboardScreen = () => {
+  const userLoginPercentage = 71;
   return (
     <View style={styles.mainContainer}>
       <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
@@ -32,9 +33,28 @@ const DashboardScreen = () => {
           style={styles.imageStyle}
         />
       </TouchableOpacity>
+      <Text style={styles.trafficTitle}>Gym Traffic</Text>
+      {userLoginPercentage<=40?
+      <View style={styles.row}>
+      <View style={styles.greenTraffic}></View>
+        <Text style={styles.trafficText}>Not up to the mark. YOU GOTTA PUSH YOURSELF</Text>
+      </View>
+      :
+      userLoginPercentage>40 && userLoginPercentage<=70?
+      <View style={styles.row}>
+      <View style={styles.orangeTraffic}></View>
+        <Text style={styles.trafficText}>Doing good but YOU CAN DO BETTER</Text>
+      </View>
+      :
+      <View style={styles.row}>
+      <View style={styles.redTraffic}></View>
+        <Text style={styles.trafficText}>You are consistent. KEEP UP THE GOOD WORK!!!</Text>
+      </View>
+      }
       <FloatingButton />
     </View>
   )
 }
 
 export default DashboardScreen
+
