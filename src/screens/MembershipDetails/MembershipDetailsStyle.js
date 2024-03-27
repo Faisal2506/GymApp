@@ -11,7 +11,6 @@ export const styles = StyleSheet.create({
     color:"#F37293",
     fontSize:getResponsiveFontSize(18),
     marginLeft:SCREEN_WIDTH/30,
-    // borderWidth:1,borderColor:"#fff",
     marginVertical:SCREEN_HEIGHT/50,
     fontFamily:"NotoSansExtraBold",
   },
@@ -26,7 +25,6 @@ export const styles = StyleSheet.create({
   container:{
     borderBottomWidth:1,
     borderColor:"#fff",
-    // paddingBottom:SCREEN_HEIGHT/50,
     justifyContent:"center",
     height:SCREEN_HEIGHT/20
   },

@@ -8,7 +8,6 @@ export const styles = StyleSheet.create({
     paddingHorizontal:SCREEN_WIDTH/40
   },
   chatTypeCard:{
-    // borderWidth:1,borderColor:"#fff",
     height:SCREEN_HEIGHT/6,
     borderRadius:20,
     justifyContent:"space-between",alignItems:"center",

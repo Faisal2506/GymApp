@@ -22,22 +22,17 @@ export const styles = StyleSheet.create({
     resizeMode:"contain",
     height:SCREEN_HEIGHT/2.19,
   },
-  // idText:{
-  //   color:"#D0FD3E",
-  //   fontFamily:"NotoSansExtraLight"
-  // },
   row:{
     flexDirection:"row",
     justifyContent:"space-between"
   },
-  // paidToPay:{
-  //   flexDirection:"row",
-  //   justifyContent:"space-between"
-  // },
   planDetails:{
     color:"#D0FD3E",
     fontSize:getResponsiveFontSize(16),
     fontFamily:"NotoSansExtraBold"
+  },
+  underline:{
+    textDecorationLine:'underline'
   },
   attendanceButton:{
     width:SCREEN_WIDTH/2
