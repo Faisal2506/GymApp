@@ -40,8 +40,7 @@ const MyPlanScreen = ({navigation}) => {
       <Text style={styles.planDetails}>End Date</Text>
       </View>
       <Text style={styles.planDetails}>Plan Status</Text>
-      {/* <Text style={styles.planDetails}>Freeze Status</Text> */}
-      <Button title={"freeze"} buttonFunction={freezeHandle}/>
+      <Button title={"Freeze"} buttonFunction={freezeHandle} buttonStyle={styles.buttonStyle}/>
       <View style={styles.row}>
       <Button title={"Payment"} buttonStyle={styles.buttonStyle}/>
       <Button title={"Attendance Report"} buttonStyle={[styles.buttonStyle,styles.attendanceButton]}/>
