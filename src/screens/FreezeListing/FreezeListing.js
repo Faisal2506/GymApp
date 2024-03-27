@@ -39,11 +39,11 @@ const FreezeListing = ({navigation}) => {
       <ConfirmModal modalVisible={confirmModalVisible} toggleModal={freezeHandle} yesHandle={freezeYesHandle}/>
       <ConfirmModal modalVisible={confirmModalVisible} toggleModal={unFreezeHandle} yesHandle={unFreezeYesHandle}/>
       <View>
-        <Text style={{color:"#fff"}}>{freeze}</Text>
-        <Text>ID</Text>
-        <Text>Type</Text>
-        <Text>Date</Text>
-        <Text>Created Date</Text>
+        <Text style={styles.details}>{freeze}</Text>
+        <Text style={styles.details}>ID</Text>
+        <Text style={styles.details}>Type</Text>
+        <Text style={styles.details}>Date</Text>
+        <Text  style={styles.details}>Created Date</Text>
       </View>
     </View>
   )
