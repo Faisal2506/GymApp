@@ -13,7 +13,6 @@ export const styles = StyleSheet.create({
   },
   bottomHalf:{
     borderWidth:1,
-    // borderColor:"red",
     height:SCREEN_HEIGHT/2.6
   },
   userName:{
@@ -40,7 +39,6 @@ export const styles = StyleSheet.create({
     flexDirection:"row",
     marginTop:SCREEN_HEIGHT/20,
     borderWidth:1,
-    // borderColor:"red",
     justifyContent:"space-around"
   },
   iconContainer:{

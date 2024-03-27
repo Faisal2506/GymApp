@@ -23,7 +23,7 @@ const MyPlanScreen = ({navigation}) => {
           <View style={styles.planContents}>
       <View style={styles.row}>
       <TouchableOpacity onPress={idHandle}>
-      <Text style={styles.planDetails}>ID</Text>
+      <Text style={[styles.planDetails,styles.underline]}>ID</Text>
       </TouchableOpacity>
       <Text style={styles.planDetails}>Membership Email ID</Text>
       </View>

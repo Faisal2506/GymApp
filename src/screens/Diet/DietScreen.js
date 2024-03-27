@@ -59,11 +59,6 @@ const DietScreen = () => {
       />
       <Text style={styles.dietDetails}>Created Date and Time : </Text>
       </View>
-      {/* <Text style={styles.dietDetails}>Type: Non Veg</Text>
-      <Text style={styles.dietDetails}>Name: </Text>
-      <Text style={styles.dietDetails}>Send By: </Text>
-      <Text style={styles.dietDetails}>View PDF</Text>
-      <Text style={styles.dietDetails}>Created Date and Time:</Text> */}
       </View>
     </ScrollView>
   )

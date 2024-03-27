@@ -22,7 +22,6 @@ export const styles = StyleSheet.create({
     fontSize:getResponsiveFontSize(16)
   },
   cardTitleContainer:{
-    // borderWidth:1,
     marginTop:SCREEN_HEIGHT/20,
     marginBottom:SCREEN_HEIGHT/30,
     borderColor:"#fff",
@@ -40,7 +39,6 @@ export const styles = StyleSheet.create({
     marginRight:SCREEN_WIDTH/20
   },
   cardContainer:{
-    // borderWidth:1,
     borderColor:"#fff",
     alignItems:"center"
   },
@@ -56,10 +54,8 @@ export const styles = StyleSheet.create({
   row:{
     flexDirection:"row",
     width:SCREEN_WIDTH/1.4,
-    // justifyContent:"center",
     alignItems:"center",
     marginTop:SCREEN_HEIGHT/80,
-    // borderWidth:1,borderColor:"#fff"
   },
   greenTraffic:{
     height:SCREEN_HEIGHT/20,

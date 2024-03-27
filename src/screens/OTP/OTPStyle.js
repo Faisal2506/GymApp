@@ -40,12 +40,6 @@ export const styles = StyleSheet.create({
     borderColor:"red",
     borderWidth:1
   },
-
-  // borderStyleHighLighted: {
-  //   borderColor: "#D0FD3E",
-  //   // borderWidth:1
-  // },
-
   underlineStyleBase: {
     width: SCREEN_WIDTH/5,
     height: SCREEN_HEIGHT/10,

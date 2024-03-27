@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
   mainContainer:{
     flex:1,
     backgroundColor:"#D0FD3E",
-    // paddingHorizontal:SCREEN_WIDTH/40,
   },
   topSection:{
     height:SCREEN_HEIGHT/4,
@@ -24,7 +23,6 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius:15,
     flex:1,
     paddingHorizontal:SCREEN_WIDTH/40,
-    // paddingTop:SCREEN_HEIGHT/20
   },
   detailsContainer:{
     paddingTop:SCREEN_HEIGHT/20,

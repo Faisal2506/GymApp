@@ -35,7 +35,6 @@ const LoginScreen = ({navigation}) => {
           value={email}
         />
         {emailError?<Text style={styles.errorText}>❗Please enter valid email</Text>:null}
-        {/* <Button /> */}
         <View style={styles.loginContainer}> 
             <View style={styles.iconContainer}>
               <AntDesign 
