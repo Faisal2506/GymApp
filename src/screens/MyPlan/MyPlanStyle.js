@@ -43,6 +43,6 @@ export const styles = StyleSheet.create({
     width:SCREEN_WIDTH/2
   },
   buttonStyle:{
-    marginTop:SCREEN_HEIGHT/30
+    marginTop:SCREEN_HEIGHT/70
   }
 })
