@@ -18,7 +18,8 @@ export const styles = StyleSheet.create({
   },
   welcomeText:{
     color:"#fff",
-    fontFamily:"NotoSansRegular",
+    fontFamily:"NotoSansBold",
+    color:"#D0FD3E",
     fontSize:getResponsiveFontSize(16)
   },
   cardTitleContainer:{
@@ -30,12 +31,12 @@ export const styles = StyleSheet.create({
   },
   cardTitle:{
     color:"#fff",
-    fontFamily:"NotoSansRegular",
+    fontFamily:"NotoSansExtraBold",
     marginLeft:SCREEN_WIDTH/20
   },
   dailyDate:{
     color:"#D0FD3E",
-    fontFamily:"NotoSansRegular",
+    fontFamily:"NotoSansExtraBold",
     marginRight:SCREEN_WIDTH/20
   },
   cardContainer:{
