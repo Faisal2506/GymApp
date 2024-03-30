@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   imageStyle:{
     height:SCREEN_HEIGHT/5,
     width:SCREEN_WIDTH,
-    borderRadius:999,
+    borderRadius:30
   },
   detailesContainer:{
     // borderWidth:1,borderColor:"#fff",
