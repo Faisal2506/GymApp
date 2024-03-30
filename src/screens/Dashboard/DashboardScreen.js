@@ -37,18 +37,18 @@ const DashboardScreen = () => {
       {userLoginPercentage<=40?
       <View style={styles.row}>
       <View style={styles.greenTraffic}></View>
-        <Text style={styles.trafficText}>Not up to the mark. YOU GOTTA PUSH YOURSELF</Text>
+        <Text style={[styles.trafficText ,{color:"#2dc937"}]}>Not up to the mark. YOU GOTTA PUSH YOURSELF</Text>
       </View>
       :
       userLoginPercentage>40 && userLoginPercentage<=70?
       <View style={styles.row}>
       <View style={styles.orangeTraffic}></View>
-        <Text style={styles.trafficText}>Doing good but YOU CAN DO BETTER</Text>
+        <Text style={[styles.trafficText ,{color:"#e7b416"}]}>Doing good but YOU CAN DO BETTER</Text>
       </View>
       :
       <View style={styles.row}>
       <View style={styles.redTraffic}></View>
-        <Text style={styles.trafficText}>You are consistent. KEEP UP THE GOOD WORK!!!</Text>
+        <Text style={[styles.trafficText ,{color:"#cc3232"}]}>You are consistent. KEEP UP THE GOOD WORK!!!</Text>
       </View>
       }
       <FloatingButton />

@@ -18,13 +18,13 @@ export const styles = StyleSheet.create({
     borderRadius:30
   },
   detailesContainer:{
-    // borderWidth:1,borderColor:"#fff",
+    // borderWidth:0.5,borderColor:"#fff",
     borderRadius:12,
-    height:SCREEN_HEIGHT/18,
+    height:SCREEN_HEIGHT/17,
     justifyContent:"center",
     paddingLeft:SCREEN_WIDTH/30,
     backgroundColor:"#3c3c3c",
-    marginTop:SCREEN_HEIGHT/40
+    marginTop:SCREEN_HEIGHT/45,
   },
   allDetailsContainer:{
     paddingHorizontal:SCREEN_WIDTH/30
