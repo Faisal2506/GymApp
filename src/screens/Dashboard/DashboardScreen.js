@@ -4,21 +4,23 @@ import { styles } from './DashboardStyle'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import FloatingButton from '../../components/FloatingButton/FloatingButton'
 import DarkModeSwitch from '../../components/DarkModeSwitch/DarkModeSwitch'
+import { useTheme } from '../../context/ThemeContext'
 
-const DashboardScreen = () => {
+const DashboardScreen = () => { 
+  const { theme, isDarkMode } = useTheme();
   const userLoginPercentage = 71;
   return (
-    <View style={styles.mainContainer}>
-      <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+    <View style={[styles.mainContainer,{backgroundColor:theme.backgroundColor}]}>
+      <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
       <View style={{flexDirection:"row"}}>
       <View style={styles.welcomeContainer}>
-        <Text style={styles.usernameText}>HELLO SARAH,</Text>
+        <Text style={[styles.usernameText,{color:theme.textColor}]}>HELLO SARAH,</Text>
         <Text style={styles.welcomeText}>Good morning</Text>
       </View>
       <DarkModeSwitch />
       </View>
       <View style={styles.cardTitleContainer}>
-        <Text style={styles.cardTitle}>Today Workout Plan</Text>
+        <Text style={[styles.cardTitle,{color:theme.textColor}]}>Today Workout Plan</Text>
         <Text style={styles.dailyDate}>Mon 11 Mar</Text>
       </View>
       <TouchableOpacity style={styles.cardContainer}>
@@ -28,7 +30,7 @@ const DashboardScreen = () => {
         />
       </TouchableOpacity>
       <View style={styles.cardTitleContainer}>
-        <Text style={styles.cardTitle}>Monthly Workout Plan</Text>
+        <Text style={[styles.cardTitle,{color:theme.textColor}]}>Monthly Workout Plan</Text>
         <Text style={styles.dailyDate}>March</Text>
       </View>
       <TouchableOpacity style={styles.cardContainer}>

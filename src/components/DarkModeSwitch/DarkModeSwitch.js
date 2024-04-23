@@ -8,7 +8,6 @@ const DarkModeSwitch = () => {
 
   return (
     <TouchableOpacity onPress={toggleTheme}>
-      <Text style={{color:"#fff"}}>hello</Text>
       <MaterialCommunityIcons 
         name={isDarkMode? 'weather-night' : 'weather-sunny'}
         size={40}
