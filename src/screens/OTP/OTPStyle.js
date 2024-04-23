@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
   mainContainer:{
     flex:1,
     paddingHorizontal:SCREEN_WIDTH/30,
-    backgroundColor:"#000000"
   },
   titleContainer:{
     marginTop:SCREEN_HEIGHT/30,
@@ -13,12 +12,10 @@ export const styles = StyleSheet.create({
   },
   title:{
     fontFamily:"NotoSansExtraBold",
-    color:"#ffffff",
     fontSize:getResponsiveFontSize(24),
     marginBottom:SCREEN_HEIGHT/40
   },
   subTitle:{
-    color:"#ffffff",
     fontFamily:"NotoSansRegular",
     fontSize:getResponsiveFontSize(12)
   },
@@ -37,7 +34,6 @@ export const styles = StyleSheet.create({
   borderStyleBase: {
     width: 100,
     height: 100,
-    borderColor:"red",
     borderWidth:1
   },
   underlineStyleBase: {
@@ -48,6 +44,6 @@ export const styles = StyleSheet.create({
   },
 
   underlineStyleHighLighted: {
-    borderColor: "#D0FD3E",
+    borderColor: "green",
   },
 })

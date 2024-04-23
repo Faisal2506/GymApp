@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal:SCREEN_WIDTH/25
   },
   welcomeContainer:{
-    marginTop:SCREEN_HEIGHT/20
+    marginTop:SCREEN_HEIGHT/20,
   },
   usernameText:{
     color:"#fff",

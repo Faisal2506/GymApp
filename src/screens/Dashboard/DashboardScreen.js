@@ -3,15 +3,19 @@ import React from 'react'
 import { styles } from './DashboardStyle'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import FloatingButton from '../../components/FloatingButton/FloatingButton'
+import DarkModeSwitch from '../../components/DarkModeSwitch/DarkModeSwitch'
 
 const DashboardScreen = () => {
   const userLoginPercentage = 71;
   return (
     <View style={styles.mainContainer}>
       <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+      <View style={{flexDirection:"row"}}>
       <View style={styles.welcomeContainer}>
         <Text style={styles.usernameText}>HELLO SARAH,</Text>
         <Text style={styles.welcomeText}>Good morning</Text>
+      </View>
+      <DarkModeSwitch />
       </View>
       <View style={styles.cardTitleContainer}>
         <Text style={styles.cardTitle}>Today Workout Plan</Text>
