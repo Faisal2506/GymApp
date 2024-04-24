@@ -4,6 +4,7 @@ import GroupRegimeScreen from '../screens/Regime/Group/GroupRegimeScreen';
 import { FontAwesome, FontAwesome5, FontAwesome6, MaterialIcons } from "@expo/vector-icons";
 import { View,Text,StyleSheet } from 'react-native';
 import { SCREEN_HEIGHT,SCREEN_WIDTH } from "../constants/constants";
+import { useTheme } from "../context/ThemeContext";
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -34,6 +35,7 @@ const screenOptions =() =>{
 }
 
 const TopTabNavigation = () => {
+  const { theme } = useTheme();
   return (
   <Tab.Navigator initialRouteName="IndividualRegimeScreen" screenOptions={screenOptions}>
     <Tab.Screen name="IndividualRegimeScreen" component={IndividualRegimeScreen} options={{tabBarIcon:({focused})=>(
