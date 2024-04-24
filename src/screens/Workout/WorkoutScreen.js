@@ -8,13 +8,13 @@ import WorkoutDetailsTable from '../../components/WorkoutDetailsTable/WorkoutDet
 import { useTheme } from '../../context/ThemeContext'
 
 const WorkoutScreen = ({navigation}) => {
-  const { theme } = useTheme();
+  const { theme, isDarkMode } = useTheme();
   const addWorkoutHandle = () => {
     navigation.navigate('AddWorkoutScreen')
   }
   return (
     <ScrollView style={[styles.mainContainer,{backgroundColor:theme.backgroundColor}]}>
-      <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+      <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
       <View style={styles.buttonContainer}>
       <Button title={"Add Workout"} buttonStyle={styles.addWorkoutBtn} buttonFunction={addWorkoutHandle}/>
       </View>
