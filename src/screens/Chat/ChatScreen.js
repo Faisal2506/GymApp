@@ -3,11 +3,13 @@ import React from 'react'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import { styles } from './ChatStyle'
 import { AntDesign } from '@expo/vector-icons'
+import { useTheme } from '../../context/ThemeContext'
 
 const ChatScreen = () => {
+  const { theme, isDarkMode } = useTheme();
   return (
-    <ScrollView style={styles.mainContainer}>
-      <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+    <ScrollView style={[styles.mainContainer,{backgroundColor: theme.backgroundColor}]}>
+      <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
       <TouchableOpacity style={styles.chatTypeCard}>
         <Image source={require('../../../assets/images/Chat/ownerChat.jpg')} style={styles.imageStyle} />
         <Text style={styles.chatTypeTitle}>Individual Chat With Gym Owner{"\n"} On Request</Text>
@@ -17,7 +19,7 @@ const ChatScreen = () => {
           color="#D0FD3E"
         />
       </TouchableOpacity>
-      <Text style={styles.trainerCardTitle}>Trainer's List</Text>
+      <Text style={[styles.trainerCardTitle,{color: theme.greenText}]}>Trainer's List</Text>
       <TouchableOpacity style={styles.chatTypeCard}>
         <Image source={require('../../../assets/images/Chat/personalTrainer01.png')} style={styles.imageStyle} />
         <Text style={styles.chatTypeTitle}>Individual Chat with Personal Trainer{"\n"} On Request</Text>
@@ -36,7 +38,7 @@ const ChatScreen = () => {
           color="#D0FD3E"
         />
       </TouchableOpacity>
-      <Text style={styles.trainerCardTitle}>Group Chat</Text>
+      <Text style={[styles.trainerCardTitle,{color: theme.greenText}]}>Group Chat</Text>
       <TouchableOpacity style={styles.chatTypeCard}>
         <Image source={require('../../../assets/images/Chat/groupChat.png')} style={styles.imageStyle} />
         <Text style={styles.chatTypeTitle}>Group Chat</Text>

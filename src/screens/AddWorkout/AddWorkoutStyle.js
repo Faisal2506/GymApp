@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     height:SCREEN_HEIGHT/4,
     alignItems:"center",
     justifyContent:"center",
-    backgroundColor:"#D0FD3E"
+    // backgroundColor:"#D0FD3E"
   },
   title:{
     color:"#000",
@@ -18,7 +18,6 @@ export const styles = StyleSheet.create({
     fontSize:getResponsiveFontSize(28)
   },
   bottomSection:{
-    backgroundColor:"#000000",
     borderTopRightRadius:15,
     borderTopLeftRadius:15,
     flex:1,
@@ -48,7 +47,6 @@ export const styles = StyleSheet.create({
   },
   input:{
     borderBottomWidth:1,
-    borderColor:"#ffffff",
     height:SCREEN_HEIGHT/15,
     color:"#ffffff",
     paddingLeft:SCREEN_WIDTH/20,

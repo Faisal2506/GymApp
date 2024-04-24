@@ -3,7 +3,7 @@ import { SCREEN_HEIGHT,SCREEN_WIDTH,getResponsiveFontSize } from '../../constant
 
 export const styles = StyleSheet.create({
   input:{
-    borderWidth:1,
+    // borderWidth:1,
     borderColor:"#fff",
     height:SCREEN_HEIGHT/15,
     width:SCREEN_WIDTH/2,
