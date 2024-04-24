@@ -3,7 +3,8 @@ export const lightTheme = {
   textColor: '#000000',
   buttonColor: '#D0FD3E',
   buttonText: '#000000',
-  tabBackgroundColor: '#ffffff'
+  tabBackgroundColor: '#ffffff',
+  greenText: '#75BD0D'
 };
 
 export const darkTheme =  {
@@ -11,5 +12,6 @@ export const darkTheme =  {
   textColor: '#ffffff',
   buttonColor: '#D0FD3E',
   buttonText: '#ffffff',
-  tabBackgroundColor: '#000000'
+  tabBackgroundColor: '#000000',
+  greenText: '#D0FD3E'
 }
