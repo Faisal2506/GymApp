@@ -44,6 +44,6 @@ export const styles = StyleSheet.create({
   },
 
   underlineStyleHighLighted: {
-    borderColor: "green",
+    borderColor: "green",color:"#000"
   },
 })

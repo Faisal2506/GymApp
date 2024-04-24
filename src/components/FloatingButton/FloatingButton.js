@@ -3,8 +3,11 @@ import React, { useRef } from 'react'
 import { styles } from './FloatingButtonStyle'
 import { AntDesign, Entypo, Octicons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
+import { useTheme } from '../../context/ThemeContext'
+
 
 const FloatingButton = () => {
+  const { theme } = useTheme();
   const navigation = useNavigation();
   const animation = useRef(new Animated.Value(0)).current;
   const [open,setOpen] = React.useState(false);
@@ -71,14 +74,14 @@ const FloatingButton = () => {
                   <Entypo 
                     name='chat'
                     size={30}
-                    color="#D0FD3E"
+                    color={theme.greenText}
                     onPress={chatHandle}
                   />
                 ) : (
                   <Octicons 
                     name='cross-reference'
                     size={30}
-                    color="#D0FD3E"
+                    color={theme.greenText}
                     onPress={inviteHandle}
                   />
                 )
@@ -89,7 +92,7 @@ const FloatingButton = () => {
       }
       <TouchableOpacity onPress={toggleMenu}>
         <Animated.View style={[styles.button, styles.menu, rotation, ]}>
-          <AntDesign name='plus' size={24} color="#D0FD3E" />
+          <AntDesign name='plus' size={24} color={theme.greenText} />
         </Animated.View>
       </TouchableOpacity> 
     </View>

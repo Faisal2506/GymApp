@@ -2,11 +2,13 @@ import { View, Text, ScrollView } from 'react-native'
 import React from 'react'
 import { styles } from './MembershipDetailsStyle'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
+import { useTheme } from '../../context/ThemeContext'
 
 const MembershipDetailsScreen = () => {
+  const { theme, isDarkMode } = useTheme();
   return (
-    <ScrollView style={styles.mainContainer}>
-      <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+    <ScrollView style={[styles.mainContainer,{backgroundColor: theme.backgroundColor}]}>
+      <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
       <View style={styles.details}>
         <View style={styles.container}>
           <Text style={styles.detailsText}>Payment</Text>

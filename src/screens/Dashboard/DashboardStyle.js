@@ -7,6 +7,11 @@ export const styles = StyleSheet.create({
     height:SCREEN_HEIGHT,
     paddingHorizontal:SCREEN_WIDTH/25
   },
+  headerContainer:{
+    flexDirection: 'row',
+    alignItems:'center',
+    justifyContent: 'space-between',
+  },
   welcomeContainer:{
     marginTop:SCREEN_HEIGHT/20,
   },

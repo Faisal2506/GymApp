@@ -39,11 +39,11 @@ const OTPScreen = ({navigation}) => {
         // code={this.state.code} //You can supply this prop or not. The component will be used as a controlled / uncontrolled component respectively.
         // onCodeChanged = {code => { this.setState({code})}}
         autoFocusOnLoad
-        codeInputFieldStyle={styles.underlineStyleBase}
+        codeInputFieldStyle={[styles.underlineStyleBase,{color: theme.greenText, borderColor: theme.greenText}]}
         codeInputHighlightStyle={styles.underlineStyleHighLighted}
         onCodeFilled={handleCodeFilled}
         placeholderCharacter="●"
-        placeholderTextColor= {theme.textColor}
+        placeholderTextColor= {theme.greenText}
         selectionColor="green"
       />
       {codeError?<Text style={styles.errorText}>❗Please fill all field</Text>:null}

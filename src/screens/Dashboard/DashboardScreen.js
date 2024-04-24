@@ -12,7 +12,7 @@ const DashboardScreen = () => {
   return (
     <View style={[styles.mainContainer,{backgroundColor:theme.backgroundColor}]}>
       <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
-      <View style={{flexDirection:"row"}}>
+      <View style={styles.headerContainer}>
       <View style={styles.welcomeContainer}>
         <Text style={[styles.usernameText,{color:theme.textColor}]}>HELLO SARAH,</Text>
         <Text style={[styles.welcomeText,{color:theme.greenText}]}>Good morning</Text>

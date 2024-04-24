@@ -2,11 +2,13 @@ import { View, Text, Image } from 'react-native'
 import React from 'react'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import { styles } from './InvitationStyle'
+import { useTheme } from '../../context/ThemeContext'
 
 const InvitationScreen = () => {
+  const { theme, isDarkMode } = useTheme();
   return (
-    <View style={styles.mainContainer}>
-      <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+    <View style={[styles.mainContainer,{backgroundColor: theme.backgroundColor}]}>
+      <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
       <Image source={require("../../../assets/images/Invitation/invitation01.jpg")} style={styles.imageStyle} />
       <View style={styles.allDetailsContainer}>
       <View style={styles.detailesContainer}><Text style={styles.invitationDetails}>ID</Text></View>
