@@ -4,11 +4,13 @@ import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import { styles } from './DietStyle'
 import ImageSlider from '../../components/ImageSlider/ImageSlider'
 import { Entypo, FontAwesome6, Ionicons, MaterialCommunityIcons } from '@expo/vector-icons'
+import { useTheme } from '../../context/ThemeContext'
 
 const DietScreen = () => {
+  const { theme, isDarkMode } = useTheme();
   return (
-    <ScrollView style={styles.mainContainer}>
-      <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+    <ScrollView style={[styles.mainContainer,{backgroundColor: theme.backgroundColor}]}>
+      <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
       <ImageSlider />
       <View style={styles.dietInfo}>
       <View style={styles.detailsContainer}>
@@ -17,7 +19,7 @@ const DietScreen = () => {
       size={25}
       color="#7928CA"
       />
-      <Text style={styles.dietDetails}>ID : </Text>
+      <Text style={[styles.dietDetails,{color: theme.textColor}]}>ID : </Text>
       </View>
       <View style={styles.detailsContainer}>
       <MaterialCommunityIcons
@@ -25,7 +27,7 @@ const DietScreen = () => {
       size={25}
       color="#fd0000"
       />
-      <Text style={styles.dietDetails}>Type : </Text>
+      <Text style={[styles.dietDetails,{color: theme.textColor}]}>Type : </Text>
       </View>
       <View style={styles.detailsContainer}>
       <Entypo
@@ -33,7 +35,7 @@ const DietScreen = () => {
       size={25}
       color="#add8e6"
       />
-      <Text style={styles.dietDetails}>Name : </Text>
+      <Text style={[styles.dietDetails,{color: theme.textColor}]}>Name : </Text>
       </View>
       <View style={styles.detailsContainer}>
       <Ionicons
@@ -41,15 +43,15 @@ const DietScreen = () => {
       size={25}
       color="#1fea00"
       />
-      <Text style={styles.dietDetails}>Send By : </Text>
+      <Text style={[styles.dietDetails,{color: theme.textColor}]}>Send By : </Text>
       </View>
       <View style={styles.detailsContainer}>
       <FontAwesome6
       name='file-pdf'
       size={25}
-      color="#ffffff"
+      color="#FFA500"
       />
-      <Text style={styles.dietDetails}>View PDF</Text>
+      <Text style={[styles.dietDetails,{color: theme.textColor}]}>View PDF</Text>
       </View>
       <View style={styles.detailsContainer}>
       <FontAwesome6
@@ -57,7 +59,7 @@ const DietScreen = () => {
       size={25}
       color="#f4e664"
       />
-      <Text style={styles.dietDetails}>Created Date and Time : </Text>
+      <Text style={[styles.dietDetails,{color: theme.textColor}]}>Created Date and Time : </Text>
       </View>
       </View>
     </ScrollView>

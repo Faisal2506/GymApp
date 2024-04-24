@@ -17,7 +17,7 @@ const LoginScreen = ({navigation}) => {
     if(!email) {
       return false
     }
-    navigation.navigate('OTPScreen')
+    navigation.navigate('DashboardScreen')
   }  
 
   return (

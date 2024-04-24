@@ -18,10 +18,11 @@ export const styles = StyleSheet.create({
   // }
   container:{
     borderWidth:1,
-    borderColor:"#D0FD3E"
+    // borderColor:"#D0FD3E",
+    
   },
   tableHeader:{
-    backgroundColor:"#D0FD3E",
+    // backgroundColor:"#D0FD3E",
   },
   title:{
     color:"#000000",

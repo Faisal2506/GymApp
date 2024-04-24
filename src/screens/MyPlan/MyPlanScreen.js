@@ -4,9 +4,11 @@ import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import { styles } from './MyPlanStyle'
 import Button from '../../components/Button/Button'
 import { useRoute, useNavigation } from '@react-navigation/native';
+import { useTheme } from '../../context/ThemeContext'
 
 
 const MyPlanScreen = ({navigation}) => {
+  const { theme, isDarkMode } = useTheme();
   const idHandle = () => {
     navigation.navigate('MembershipDetailsScreen')
   }
@@ -16,10 +18,10 @@ const MyPlanScreen = ({navigation}) => {
   const route = useRoute();
   // const { freeze } = route.params;
   return (
-    <View style={styles.mainContainer}>
-      <FocusAwareStatusBar isLightBar={true} isTopSpace={true} isTransparent={true} />
+    <View style={[styles.mainContainer,{backgroundColor: theme.backgroundColor}]}>
+      <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
       <View style={styles.cardContainer}>
-        <ImageBackground source={require('../../../assets/images/MyPlan/bg1.png')} imageStyle={{borderRadius:999}} style={styles.bgImage} resizeMethod="resize" resizeMode='cover'>
+        <ImageBackground source={require('../../../assets/images/MyPlan/bg1.png')} imageStyle={{borderRadius:23}} style={styles.bgImage} resizeMethod="resize" resizeMode='cover'>
           <View style={styles.planContents}>
       <View style={styles.row}>
       <TouchableOpacity onPress={idHandle}>

@@ -9,10 +9,11 @@ export const styles = StyleSheet.create({
     paddingTop:SCREEN_HEIGHT/30,
   },
   cardContainer:{
-    borderWidth:1,borderColor:"#D0FD3E",
-    borderRadius:20,
+    borderWidth:1,
+    borderColor: "#D0FD3E",
+    borderRadius:24,
     height:SCREEN_HEIGHT/2.18,
-    elevation:1
+    // elevation:1
   },
   planContents:{
     paddingTop:SCREEN_HEIGHT/60,

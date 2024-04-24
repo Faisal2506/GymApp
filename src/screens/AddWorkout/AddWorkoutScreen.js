@@ -2,9 +2,11 @@ import { View, Text, TextInput, ScrollView } from 'react-native'
 import React from 'react'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import { styles } from './AddWorkoutStyle'
-import Button from '../../components/Button/Button'
+import Button from '../../components/Button/Button' 
+import { useTheme } from '../../context/ThemeContext'
 
 const AddWorkoutScreen = ({navigation}) => {
+  const { theme, isDarkMode } = useTheme(); 
 
   const [startTime,setStartTime] = React.useState();
   const [endTime,setEndTime] = React.useState();
@@ -29,16 +31,16 @@ const AddWorkoutScreen = ({navigation}) => {
     navigation.navigate('TabWorkout')
   }
   return (
-    <View style={styles.mainContainer}>
-      <FocusAwareStatusBar isLightBar={false} isTopSpace={true} isTransparent={true}/>
+    <View style={[styles.mainContainer,{backgroundColor: theme.greenText}]}>
+      <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true}/>
       <View style={styles.topSection}>
-        <Text style={styles.title}>Add a Workout</Text>
+        <Text style={[styles.title,{color: theme.backgroundColor}]}>Add a Workout</Text>
       </View>
-      <ScrollView style={styles.bottomSection}>
+      <ScrollView style={[styles.bottomSection,{backgroundColor: theme.backgroundColor}]}>
         <View style={styles.detailsContainer}>
-        <Text style={styles.text}>Enter Start Time</Text>
+        <Text style={[styles.text,{color: theme.textColor}]}>Enter Start Time</Text>
         <TextInput 
-          style={styles.input}
+          style={[styles.input,{borderColor: theme.textColor, color: theme.textColor}]}
           placeholder="e.g. 07:00"
           placeholderTextColor={"#999"}
           keyboardType="numeric"
@@ -47,9 +49,9 @@ const AddWorkoutScreen = ({navigation}) => {
         />
         </View>
         <View style={styles.detailsContainer}>
-        <Text style={styles.text}>Enter End Time</Text>
+        <Text style={[styles.text,{color: theme.textColor}]}>Enter End Time</Text>
         <TextInput 
-          style={styles.input}
+          style={[styles.input,{borderColor: theme.textColor, color: theme.textColor}]}
           placeholder="e.g. 07:00"
           placeholderTextColor={"#999"}
           keyboardType="numeric"
@@ -59,7 +61,7 @@ const AddWorkoutScreen = ({navigation}) => {
         </View>
         {timeError?<Text style={styles.errorText}>❗Enter valid time</Text>:null}
         <View style={[styles.detailsContainer,{flexDirection:"row"}]}>
-        <Text style={styles.text}>Total Time:    {totalTime}</Text>
+        <Text style={[styles.text,{color: theme.textColor}]}>Total Time:    {totalTime}</Text>
         <Button title={"Calculate"} buttonStyle={styles.calculateBtnStyle} buttonFunction={calculateHandle}/>
         </View>
         <View style={styles.detailsContainer}>
