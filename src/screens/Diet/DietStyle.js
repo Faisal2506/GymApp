@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
   },
   dietDetails:{
     color:"#fff",
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     marginLeft:SCREEN_WIDTH/30,
     fontSize:getResponsiveFontSize(18)
   },

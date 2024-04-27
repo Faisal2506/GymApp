@@ -22,7 +22,8 @@ const MyPlanScreen = ({navigation}) => {
       <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
       <View style={styles.cardContainer}>
         <ImageBackground source={require('../../../assets/images/MyPlan/bg1.png')} imageStyle={{borderRadius:23}} style={styles.bgImage} resizeMethod="resize" resizeMode='cover'>
-          <View style={styles.planContents}>
+      <View style={styles.planContents}>
+      <View style={ styles.textContents }>
       <View style={styles.row}>
       <TouchableOpacity onPress={idHandle}>
       <Text style={[styles.planDetails,styles.underline]}>ID</Text>
@@ -42,6 +43,7 @@ const MyPlanScreen = ({navigation}) => {
       <Text style={styles.planDetails}>End Date</Text>
       </View>
       <Text style={styles.planDetails}>Plan Status</Text>
+      </View>
       <Button title={"Freeze"} buttonFunction={freezeHandle} buttonStyle={styles.buttonStyle}/>
       <View style={styles.row}>
       <Button title={"Payment"} buttonStyle={styles.buttonStyle}/>

@@ -12,7 +12,7 @@ export const styles = StyleSheet.create({
     fontSize:getResponsiveFontSize(18),
     marginLeft:SCREEN_WIDTH/30,
     marginVertical:SCREEN_HEIGHT/50,
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraRegular",
   },
   details:{
     // borderWidth:1,borderColor:"#999",
@@ -31,7 +31,7 @@ export const styles = StyleSheet.create({
   detailsText:{
     color:"#fff",
     marginLeft:SCREEN_WIDTH/30,
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     color:"#D0FD3E"
   },
   memberInfo:{

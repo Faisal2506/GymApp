@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
   },
   loginText:{
     color:"#000000",
-    fontFamily:"NotoSansBold",
+    fontFamily:"LoraBold",
     fontSize:getResponsiveFontSize(16)
   }
 })

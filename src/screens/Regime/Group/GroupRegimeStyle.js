@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   },
   detailsText:{
     color:"#D0FD3E",
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     fontSize:getResponsiveFontSize(20)
   }
 })

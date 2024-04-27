@@ -11,6 +11,7 @@ import InvitationScreen from "../screens/Invitation/InvitationScreen";
 import AddWorkoutScreen from "../screens/AddWorkout/AddWorkoutScreen";
 import MembershipDetailsScreen from "../screens/MembershipDetails/MembershipDetailsScreen";
 import FreezeListing from "../screens/FreezeListing/FreezeListing";
+import MessagingScreen from "../screens/Messaging/MessagingScreen";
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,7 @@ const StackNavigation = () => {
         {/* <Stack.Screen name="OTPScreen" component={OTPScreen} options={options} /> */}
         <Stack.Screen name="DashboardScreen" component={BottomTabNavigation} options={options} />
         <Stack.Screen name="ChatScreen" component={ChatScreen} options={options} />
+        <Stack.Screen name="MessagingScreen" component={MessagingScreen} options={options} />
         <Stack.Screen name="InvitationScreen" component={InvitationScreen} options={options} />
         <Stack.Screen name="AddWorkoutScreen" component={AddWorkoutScreen} options={options} />
         <Stack.Screen name="MembershipDetailsScreen" component={MembershipDetailsScreen} options={options} />

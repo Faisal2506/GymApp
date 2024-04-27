@@ -46,9 +46,9 @@ const BottomTabNavigation = () => {
               <MaterialIcons
                 name="space-dashboard"
                 size={focused ? 30 : 20}
-                color={focused ? "#D0FD3E" : theme.textColor}
+                color={focused ? theme.greenText : theme.textColor}
               />
-              <Text style={{ fontSize: 12, color: focused ? "#D0FD3E" : theme.textColor }}>Dashboard</Text>
+              <Text style={{ fontSize: 12,fontFamily:"LoraBold", color: focused ? theme.greenText : theme.textColor }}>Dashboard</Text>
             </View>
           )
         }}
@@ -60,9 +60,9 @@ const BottomTabNavigation = () => {
               <FontAwesome5
                 name="dumbbell"
                 size={focused ? 30 : 20}
-                color={focused ? "#D0FD3E" : theme.textColor}
+                color={focused ? theme.greenText : theme.textColor}
               />
-              <Text style={{ fontSize: 12, color: focused ? "#D0FD3E" : theme.textColor }}>Workout</Text>
+              <Text style={{ fontSize: 12,fontFamily:"LoraBold", color: focused ? theme.greenText : theme.textColor }}>Workout</Text>
             </View>
           )
         }}
@@ -74,9 +74,9 @@ const BottomTabNavigation = () => {
               <MaterialCommunityIcons
                 name="file-document-edit"
                 size={focused ? 30 : 20}
-                color={focused ? "#D0FD3E" : theme.textColor}
+                color={focused ? theme.greenText : theme.textColor}
               />
-              <Text style={{ fontSize: 12, color: focused ? "#D0FD3E" : theme.textColor }}>Regime</Text>
+              <Text style={{ fontSize: 12,fontFamily:"LoraBold", color: focused ? theme.greenText : theme.textColor }}>Regime</Text>
             </View>
           )
         }}
@@ -88,9 +88,9 @@ const BottomTabNavigation = () => {
               <MaterialIcons
                 name="food-bank"
                 size={focused ? 40 : 25}
-                color={focused ? "#D0FD3E" : theme.textColor}
+                color={focused ? theme.greenText : theme.textColor}
               />
-              <Text style={{ fontSize: 12, color: focused ? "#D0FD3E" : theme.textColor }}>Diet</Text>
+              <Text style={{ fontSize: 12,fontFamily:"LoraBold", color: focused ? theme.greenText : theme.textColor }}>Diet</Text>
             </View>
           )
         }}
@@ -102,9 +102,9 @@ const BottomTabNavigation = () => {
               <FontAwesome6
                 name="user-large"
                 size={focused ? 30 : 20}
-                color={focused ? "#D0FD3E" : theme.textColor}
+                color={focused ? theme.greenText : theme.textColor}
               />
-              <Text style={{ fontSize: 12, color: focused ? "#D0FD3E" : theme.textColor }}>My Plan</Text>
+              <Text style={{ fontSize: 12,fontFamily:"LoraBold", color: focused ? theme.greenText : theme.textColor }}>My Plan</Text>
             </View>
           )
         }}
@@ -119,10 +119,10 @@ const styles = StyleSheet.create({
   selectedTab: {
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "blue",
-    width: 100,
-    height: 100,
-    borderRadius: 50
+    // backgroundColor: "black",
+    // width: 75,
+    // height: 70,
+    // borderRadius: 50,
   },
   otherTab: {
     alignItems: "center",

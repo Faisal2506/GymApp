@@ -13,13 +13,13 @@ export const styles = StyleSheet.create({
     top:-SCREEN_HEIGHT/7.3,
     width:SCREEN_WIDTH,
     height:SCREEN_HEIGHT/1.6,
-    resizeMode:"contain"
+    resizeMode:"contain"  
   },
   titleStyle:{
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     fontSize:50
   },
   subTitleStyle:{
-    fontFamily:"NotoSansExtraBold"
+    fontFamily:"LoraRegular"
   }
 })

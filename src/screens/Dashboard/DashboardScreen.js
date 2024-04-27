@@ -8,7 +8,7 @@ import { useTheme } from '../../context/ThemeContext'
 
 const DashboardScreen = () => { 
   const { theme, isDarkMode } = useTheme();
-  const userLoginPercentage = 71;
+  const userLoginPercentage = 40;
   return (
     <View style={[styles.mainContainer,{backgroundColor:theme.backgroundColor}]}>
       <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
@@ -40,13 +40,15 @@ const DashboardScreen = () => {
         />
       </TouchableOpacity>
       <Text style={[styles.trafficTitle,{color:theme.greenText}]}>Gym Traffic</Text>
-      {userLoginPercentage<=40?
+      {userLoginPercentage<=40
+      ?
       <View style={styles.row}>
       <View style={styles.greenTraffic}></View>
         <Text style={[styles.trafficText ,{color:"#2dc937"}]}>Not up to the mark. YOU GOTTA PUSH YOURSELF</Text>
       </View>
       :
-      userLoginPercentage>40 && userLoginPercentage<=70?
+      userLoginPercentage>40 && userLoginPercentage<=70
+      ?
       <View style={styles.row}>
       <View style={styles.orangeTraffic}></View>
         <Text style={[styles.trafficText ,{color:"#e7b416"}]}>Doing good but YOU CAN DO BETTER</Text>
