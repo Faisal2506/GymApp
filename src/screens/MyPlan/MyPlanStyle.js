@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal:SCREEN_WIDTH/40,
   },
   textContents:{
-    marginBottom:SCREEN_HEIGHT/30
+    marginBottom:SCREEN_HEIGHT/50
   },
   bgImage:{
     resizeMode:"contain",
@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
   },
   planDetails:{
     color:"#D0FD3E",
-    fontSize:getResponsiveFontSize(16),
+    fontSize:getResponsiveFontSize(17),
     fontFamily:"LoraBold"
   },
   underline:{
