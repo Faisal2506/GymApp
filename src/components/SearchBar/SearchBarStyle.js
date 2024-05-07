@@ -12,6 +12,6 @@ export const styles = StyleSheet.create({
     borderRadius:30,
     backgroundColor:"#999",
     textAlign:"center",
-    fontFamily:"NotoSansBold"
+    fontFamily:"LoraBold"
   }
 })

@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   },
   details:{
     color:"#D0FD3E",
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     fontSize:getResponsiveFontSize(20),
     marginBottom:SCREEN_HEIGHT/50
   }

@@ -17,7 +17,10 @@ export const styles = StyleSheet.create({
   },
   planContents:{
     paddingTop:SCREEN_HEIGHT/60,
-    paddingHorizontal:SCREEN_WIDTH/40
+    paddingHorizontal:SCREEN_WIDTH/40,
+  },
+  textContents:{
+    marginBottom:SCREEN_HEIGHT/50
   },
   bgImage:{
     resizeMode:"contain",
@@ -29,8 +32,8 @@ export const styles = StyleSheet.create({
   },
   planDetails:{
     color:"#D0FD3E",
-    fontSize:getResponsiveFontSize(16),
-    fontFamily:"NotoSansExtraBold"
+    fontSize:getResponsiveFontSize(17),
+    fontFamily:"LoraBold"
   },
   underline:{
     textDecorationLine:'underline'

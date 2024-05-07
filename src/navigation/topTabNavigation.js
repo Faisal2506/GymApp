@@ -8,34 +8,61 @@ import { useTheme } from "../context/ThemeContext";
 
 const Tab = createMaterialTopTabNavigator();
 
-const screenOptions =() =>{
+// const screenOptions =() =>{
 
-  return{
-    tabBarActiveTintColor: '#e91e63',
+//   return{
+//     tabBarActiveTintColor: '#e91e63',
 
-    headerShown: false,
-    tabBarShowLabel: false,
-    tabBarStyle:{
-      position:'absolute',
-      left:0,
-      right:0,
-      // top:SCREEN_HEIGHT/35,
-      top:0,
-      paddingTop:SCREEN_HEIGHT/35,
-      backgroundColor:"blue",
-      height:SCREEN_HEIGHT/8,
-    },
-    tabBarLabelStyle: { fontSize: 12 },
-    // tabBarIconStyle:{
-    //   // marginBottom:5
-    // },
-    tabBarHideOnKeyBoard:true,
-    tabBarAndroidRipple: { borderless: true },
-  }
-}
+//     headerShown: false,
+//     tabBarShowLabel: false,
+//     tabBarStyle:{
+//       position:'absolute',
+//       left:0,
+//       right:0,
+//       // top:SCREEN_HEIGHT/35,
+//       top:0,
+//       paddingTop:SCREEN_HEIGHT/35,
+//       backgroundColor: theme.textColor,
+//       height:SCREEN_HEIGHT/8,
+//     },
+//     tabBarLabelStyle: { fontSize: 12 },
+//     // tabBarIconStyle:{
+//     //   // marginBottom:5
+//     // },
+//     tabBarHideOnKeyBoard:true,
+//     tabBarAndroidRipple: { borderless: true },
+//   }
+// }
 
 const TopTabNavigation = () => {
   const { theme } = useTheme();
+
+  const screenOptions =() =>{
+
+    return{
+      tabBarActiveTintColor: '#e91e63',
+  
+      headerShown: false,
+      tabBarShowLabel: false,
+      tabBarStyle:{
+        position:'absolute',
+        left:0,
+        right:0,
+        // top:SCREEN_HEIGHT/35,
+        top:0,
+        paddingTop:SCREEN_HEIGHT/35,
+        backgroundColor: "black",
+        height:SCREEN_HEIGHT/8,
+      },
+      tabBarLabelStyle: { fontSize: 12 },
+      // tabBarIconStyle:{
+      //   // marginBottom:5
+      // },
+      tabBarHideOnKeyBoard:true,
+      tabBarAndroidRipple: { borderless: true },
+    }
+  }
+
   return (
   <Tab.Navigator initialRouteName="IndividualRegimeScreen" screenOptions={screenOptions}>
     <Tab.Screen name="IndividualRegimeScreen" component={IndividualRegimeScreen} options={{tabBarIcon:({focused})=>(
@@ -46,7 +73,7 @@ const TopTabNavigation = () => {
             color={focused?"#D0FD3E":"#ffffff"}
           />
           <View >
-          <Text style={{fontSize:12,color:focused?"#D0FD3E":"#ffffff"}}>Individual</Text>
+          <Text style={{fontFamily:"LoraBold", fontSize:12,color:focused?"#D0FD3E":"#ffffff"}}>Individual</Text>
           </View>
         </View>
       )}}/>
@@ -57,7 +84,7 @@ const TopTabNavigation = () => {
             size={20}
             color={focused?"#D0FD3E":"#ffffff"}
           />
-          <Text style={{fontSize:12,color:focused?"#D0FD3E":"#ffffff"}}>Group</Text>
+          <Text style={{fontFamily:"LoraBold", fontSize:12,color:focused?"#D0FD3E":"#ffffff"}}>Group</Text>
         </View>
       )}}/>
   </Tab.Navigator>

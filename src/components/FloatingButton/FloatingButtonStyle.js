@@ -26,9 +26,9 @@ export const styles = StyleSheet.create({
     elevation: 5
   },
   menu: {
-    backgroundColor: "blue",
+    backgroundColor: "black",
   },
   secondary: {
-    backgroundColor: "blue"
+    backgroundColor: "black"
   }
 })

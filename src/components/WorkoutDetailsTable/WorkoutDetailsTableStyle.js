@@ -26,8 +26,10 @@ export const styles = StyleSheet.create({
   },
   title:{
     color:"#000000",
+    fontFamily: "LoraBold"
   },
   text:{
     color:"#ffffff",
+    fontFamily: "LoraRegular"
   }
 })

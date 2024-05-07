@@ -16,12 +16,12 @@ export const styles = StyleSheet.create({
     marginTop:SCREEN_HEIGHT/20,
   },
   usernameText:{
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     fontSize:getResponsiveFontSize(30)
   },
   welcomeText:{
     color:"#fff",
-    fontFamily:"NotoSansBold",
+    fontFamily:"LoraBold",
     color:"#D0FD3E",
     fontSize:getResponsiveFontSize(16)
   },
@@ -32,12 +32,12 @@ export const styles = StyleSheet.create({
     justifyContent:"space-between",
   },
   cardTitle:{
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     marginLeft:SCREEN_WIDTH/20
   },
   dailyDate:{
     color:"#D0FD3E",
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     marginRight:SCREEN_WIDTH/20
   },
   cardContainer:{
@@ -47,7 +47,7 @@ export const styles = StyleSheet.create({
   },
   trafficTitle:{
     color:"#D0FD3E",
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     paddingLeft:SCREEN_WIDTH/40,
     fontSize:getResponsiveFontSize(18),
     marginTop:SCREEN_HEIGHT/40
@@ -78,8 +78,8 @@ export const styles = StyleSheet.create({
   },
   trafficText:{
     color:"#D0FD3E",
-    fontFamily:"NotoSansExtraBold",
+    fontFamily:"LoraBold",
     marginLeft:SCREEN_WIDTH/50,
-    fontSize:getResponsiveFontSize(13),
+    fontSize:getResponsiveFontSize(14),
   }
 })

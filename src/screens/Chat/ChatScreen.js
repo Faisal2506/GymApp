@@ -5,8 +5,12 @@ import { styles } from './ChatStyle'
 import { AntDesign } from '@expo/vector-icons'
 import { useTheme } from '../../context/ThemeContext'
 
-const ChatScreen = () => {
+const ChatScreen = ({ navigation }) => {
   const { theme, isDarkMode } = useTheme();
+
+  const handleGroupChat = () => {
+    navigation.navigate('MessagingScreen')
+  }
   return (
     <ScrollView style={[styles.mainContainer,{backgroundColor: theme.backgroundColor}]}>
       <FocusAwareStatusBar isLightBar={isDarkMode?true:false} isTopSpace={true} isTransparent={true} />
@@ -39,7 +43,7 @@ const ChatScreen = () => {
         />
       </TouchableOpacity>
       <Text style={[styles.trainerCardTitle,{color: theme.greenText}]}>Group Chat</Text>
-      <TouchableOpacity style={styles.chatTypeCard}>
+      <TouchableOpacity style={styles.chatTypeCard} onPress={handleGroupChat}>
         <Image source={require('../../../assets/images/Chat/groupChat.png')} style={styles.imageStyle} />
         <Text style={styles.chatTypeTitle}>Group Chat</Text>
         <AntDesign

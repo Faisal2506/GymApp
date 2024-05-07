@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
     alignItems:"center",
   },
   buttonTitle:{
-    fontFamily:"NotoSansBold",
+    fontFamily:"LoraBold",
     fontSize:getResponsiveFontSize(18),
     textAlign:'center'
   }

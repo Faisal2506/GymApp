@@ -17,5 +17,10 @@ export let customFonts = {
   'NotoSansBold':require('../../assets/fonts/NotoSansLaoLooped-Bold.ttf'),
   'NotoSansExtraBold':require('../../assets/fonts/NotoSansLaoLooped-ExtraBold.ttf'),
   'NotoSansRegular':require('../../assets/fonts/NotoSansLaoLooped-Regular.ttf'),
-  'NotoSansExtraLight' :require('../../assets/fonts/NotoSansLaoLooped-ExtraLight.ttf')
+  'NotoSansExtraLight' :require('../../assets/fonts/NotoSansLaoLooped-ExtraLight.ttf'),
+  'OpenSansRegular' : require('../../assets/fonts/OpenSans-Regular.ttf'),
+  'OpenSansBold' : require('../../assets/fonts/OpenSans-Bold.ttf'),
+  'LoraBold' : require('../../assets/fonts/Lora-Bold.ttf'),
+  'LoraRegular' : require('../../assets/fonts/Lora-Regular.ttf'),
+  'LoraSemiBold' : require('../../assets/fonts/Lora-SemiBold.ttf')
 }

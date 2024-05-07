@@ -68,7 +68,7 @@ const FloatingButton = () => {
         open && 
         [...Array(2)].map((_, index) => (
           <TouchableOpacity key={index}>
-            <Animated.View style={[styles.button, styles.secondary, getAnimatedStyle(index), { backgroundColor: "blue"}]}>
+            <Animated.View style={[styles.button, styles.secondary, getAnimatedStyle(index), ]}>
               {
                 index === 0 ? (
                   <Entypo 
