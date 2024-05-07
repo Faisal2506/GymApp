@@ -3,10 +3,14 @@ import React from 'react'
 import FocusAwareStatusBar from '../../components/StatusBar/FocusAwareStatusBar'
 import { styles } from './LoginStyle'
 import { AntDesign } from '@expo/vector-icons'
-
+import{ FIREBASE_AUTH } from '../../../FirebaseConfig'
 const LoginScreen = ({navigation}) => {
   const [email,setEmail] = React.useState('');
   const [emailError, setEmailError] = React.useState(false);
+  const [password, setPassword] = React.useState('');
+  const [loading, setLoading] = React.useState
+  (false);
+  const auth = FIREBASE_AUTH;
   
   const loginHandle = () => {
     if(!email) {
@@ -32,6 +36,13 @@ const LoginScreen = ({navigation}) => {
           placeholderTextColor={"#ffffff"}
           style={styles.emailInput}
           onChangeText={(text)=>setEmail(text)}
+          value={email}
+        />
+        <TextInput
+          placeholder='Password'
+          placeholderTextColor={"#ffffff"}
+          style={styles.emailInput}
+          onChangeText={(text)=>setPassword(text)}
           value={email}
         />
         {emailError?<Text style={styles.errorText}>❗Please enter valid email</Text>:null}
